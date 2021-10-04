@@ -1,0 +1,103 @@
+@media only screen and (max-width: 1700px) {}
+@media only screen and (max-width: 1450px) {}
+@media only screen and (max-width: 1400px) {}
+@media only screen and (max-width: 1280px) {
+   
+}
+@media only screen and (max-width: 1200px) {}
+@media only screen and (max-width: 1050px) {
+    .tab-content{
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    #aside{
+        position: fixed;
+        top: 0;
+        left: -255px;
+        z-index: 9;
+        .btn-menu{
+            display: block;
+        }
+    }
+}
+@media only screen and (max-width: 750px) {
+    header{
+        .top-header{
+            flex-direction: column;
+            .social-wrap{
+                margin-top: 15px;
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 580px) {
+    .tab-content {
+        width: 90%;
+        margin-left: 10px;
+        .tab-item{
+            .mess-body, .upload-files{
+                margin: 20px 40px 0;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 425px) {
+    header{
+        .top-header{
+            .task-title-wrap{
+                .task-title{
+                    font-size: 25px;
+                }
+            }
+        }
+        .tabs-section{
+            ul li+li{
+                margin-left: 10px;
+            }
+        } 
+    }
+      
+}
+@media only screen and (max-width: 390px) {
+    header{
+        .top-header{
+            .task-title-wrap{
+                .task-title{
+                    font-size: 17px;
+                }
+            }
+            .social-wrap{
+                flex-direction: column;
+                .users-section{
+                    margin-bottom: 15px;
+                    margin-right: 0;
+                }
+            }
+        }
+        .tabs-section{
+            display: flex;
+            justify-content: center;
+            li{
+                font-size: 14px;
+            }
+            ul li+li{
+                margin-left: 7px;
+            }
+        }  
+    }
+    .tab-content{
+        padding: 30px 25px 90px;
+        .tab-item{
+            .mess-body{
+                margin: 20px 20px 0;
+            }  
+            .tab-section{
+                flex-direction: column;
+            }
+        } 
+    }
+}
+

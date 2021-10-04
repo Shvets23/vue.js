@@ -1,0 +1,85 @@
+header{
+    background: #fff;
+    box-shadow: 0 2px 15px rgb(202 203 214 / 47%);
+    z-index: 7;
+    position: relative;
+    .top-header{
+        padding: 35px 40px 20px 30px;
+        display: flex;
+        justify-content: space-between;
+        .task-title-wrap{
+            display: flex;
+            align-items: center;
+            .task-title{
+                font-size: 32px;
+                color: $dark;
+                margin: 0 10px 0 15px;
+            }
+            .logo{
+                background: $yellow;
+                width: 40px;
+                height: 40px;
+                border-radius: 5px;
+                img{
+                    width: 100%;
+                }
+            }
+            .more-info{
+                height: 30px;
+                width: 30px;
+                color: #D8D8D8;
+                background: $lg;
+                text-align: center;
+                line-height: 31px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+        }
+        .social-wrap{
+            display: flex;
+            align-items: center;
+            .social-btns{
+                display: flex;
+                align-items: center;
+            }
+            .users-section{
+                margin-right: 15px;
+                li{
+                    height: 30px;
+                    width: 30px;
+                    background: $lg;
+                    border-radius: 50%;
+                    display: inline-block;
+                    overflow: hidden;
+                    cursor: pointer;
+                    img{
+                        width: 100%;
+                    }
+                }
+                li + li {
+                    margin-left: 5px;
+                }
+            }
+        }
+        
+    }
+    .tabs-section{
+        ul{
+            margin: 0 30px;
+            display: flex;
+            li + li {
+                margin-left: 27px;
+            }
+            .tab-link{
+                color: $dark;
+                opacity: .7;
+                padding-bottom: 14px;
+                cursor: pointer;
+            }
+            .active-tab{
+                opacity: 1;
+                border-bottom: 2px solid $yellow;
+            }
+        }
+    }
+}

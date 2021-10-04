@@ -1,0 +1,44 @@
+@import 'reset';
+@import 'vars';
+@import 'activity';
+@import 'aside';
+@import 'header';
+body{
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    background: $lg;
+}
+.container{
+    display: flex;
+    .main-block{
+        flex-grow: 1;
+    }
+}
+.btn{
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 15px;
+    border: none;
+    height: 30px;
+    cursor: pointer;
+}
+.btn-chat{
+    background: #FFF8DD;
+    color: $yellow;
+    display: flex;
+    img{
+        margin-right: 5px;
+    }
+}
+.btn-share{
+    background: $lg;
+    color: $dark;
+    margin-right: 10px;
+}
+main{
+    display: flex;
+    justify-content: center;
+    height: calc(100vh - 127px);
+    overflow: auto;
+}
+@import 'media';
