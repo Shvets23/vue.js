@@ -18,6 +18,12 @@
         }
         .search-form{
             margin-left: auto;
+            .search-icon {
+                &::before {
+                    content: url(/img/search.svg);
+                    cursor: pointer;
+                }
+            }
         }
         input{
             display: none;

@@ -34,8 +34,25 @@
                 margin-right: 20px;
                 display: flex;
                 justify-content: center;
-                img {
+                align-items: center;
+                &::before {
                     width: 12px;
+                    height: 12px;
+                }
+                &.icon-approve {
+                    &::before {
+                        content: url(/img/icon.svg);
+                    }
+                }
+                &.icon-mess {
+                    &::before {
+                        content: url(/img/icon-mess.svg);
+                    }
+                }
+                &.icon-upload {
+                    &::before {
+                        content: url(/img/icon-upload.svg);
+                    }
                 }
             }
             .icon-mess{

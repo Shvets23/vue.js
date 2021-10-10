@@ -41,6 +41,14 @@ header{
             .social-btns{
                 display: flex;
                 align-items: center;
+                .btn-chat {
+                    display: flex;
+                    align-items: center;
+                    &::before {
+                        content: url(/img/chat.svg);
+                        margin-right: 5px;
+                    }
+                }
             }
             .users-section{
                 margin-right: 15px;
