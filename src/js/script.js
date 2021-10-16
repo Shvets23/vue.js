@@ -47,5 +47,54 @@ document.addEventListener("DOMContentLoaded",
             }
 
         })
+
+        // Add images to activity block
+
+        const images = [
+            '/img/img2.jpg',
+            '/img/img2.jpg',
+            '/img/img2.jpg',
+            '/img/img2.jpg',
+        ];
+        const notification = document.getElementById('notification');
+
+        function createImages() {
+            const imagesContainer = document.querySelector('.upload-files');
+            images.forEach((el, i) => {
+                let imageWrap = document.createElement('div');
+                imageWrap.classList.add('img-wrap');
+
+                let img = document.createElement('img');
+                img.src = el;
+                img.addEventListener("click", () => {
+                    notification.innerHTML = i;
+                });
+                imageWrap.appendChild(img);
+                imagesContainer.appendChild(imageWrap);
+            })
+        }
+        
+        createImages();
+
+        // Change tasks count
+
+        let completedTasks = 372;
+        let openTasks = 5;
+        const opened = document.getElementById('open');
+        const completed = document.getElementById('completed');
+        const confirmText = "Are you sure you want to change the number of tasks?";
+
+        completed.addEventListener('click', () => {
+            openTasks ? changeTasksCount() : alert('Sorry, you have no open tasks.');
+        })
+
+        function changeTasksCount() {
+            if (confirm(confirmText)) {
+                completedTasks++;
+                openTasks--;
+                opened.innerHTML = openTasks;
+                completed.innerHTML = completedTasks;
+            }
+        }
     });
 
